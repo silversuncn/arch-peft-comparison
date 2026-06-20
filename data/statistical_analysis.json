@@ -1,0 +1,3330 @@
+{
+  "block_a_anova": {
+    "lora__sst2": {
+      "F": 6.863557372942997,
+      "p": 0.0032180447341223976,
+      "significant": true,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.6309250764525994,
+        "decoder-only": 0.7609900611620795,
+        "encoder-decoder": 0.5957568807339451
+      }
+    },
+    "lora__mrpc": {
+      "F": 2.4942829919009006,
+      "p": 0.09799573183054218,
+      "significant": false,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.690563725490196,
+        "decoder-only": 0.7071078431372549,
+        "encoder-decoder": 0.6836192810457516
+      }
+    },
+    "lora__qnli": {
+      "F": 22.34203822867536,
+      "p": 7.328277259667319e-07,
+      "significant": true,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.5842180730978095,
+        "decoder-only": 0.7449966440905486,
+        "encoder-decoder": 0.5502013545670876
+      }
+    },
+    "lora__rte": {
+      "F": 16.3364211826463,
+      "p": 1.1711542244439818e-05,
+      "significant": true,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.5547533092659447,
+        "decoder-only": 0.6167268351383876,
+        "encoder-decoder": 0.5039109506618532
+      }
+    },
+    "bitfit__sst2": {
+      "F": 4.0815214379057565,
+      "p": 0.026067941011500922,
+      "significant": true,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.5378440366972478,
+        "decoder-only": 0.6231842507645259,
+        "encoder-decoder": 0.5868692660550457
+      }
+    },
+    "bitfit__mrpc": {
+      "F": 1.485233246146428,
+      "p": 0.24119586110357571,
+      "significant": false,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.681781045751634,
+        "decoder-only": 0.6678921568627451,
+        "encoder-decoder": 0.6836192810457516
+      }
+    },
+    "bitfit__qnli": {
+      "F": 6.152178942596915,
+      "p": 0.0053600686041328,
+      "significant": true,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.5399200683385197,
+        "decoder-only": 0.5698791872597474,
+        "encoder-decoder": 0.5290896332906218
+      }
+    },
+    "bitfit__rte": {
+      "F": 1.620013126435704,
+      "p": 0.213240503026245,
+      "significant": false,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.5315884476534296,
+        "decoder-only": 0.5394103489771359,
+        "encoder-decoder": 0.5126353790613719
+      }
+    },
+    "ia3__sst2": {
+      "F": 5.697154411711479,
+      "p": 0.007491686186883652,
+      "significant": true,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.5217889908256881,
+        "decoder-only": 0.6357033639143731,
+        "encoder-decoder": 0.5870603975535168
+      }
+    },
+    "ia3__mrpc": {
+      "F": 0.11606127996046572,
+      "p": 0.8907824942146636,
+      "significant": false,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.6830065359477123,
+        "decoder-only": 0.679125816993464,
+        "encoder-decoder": 0.6836192810457516
+      }
+    },
+    "ia3__qnli": {
+      "F": 8.542432423817388,
+      "p": 0.0010240535229695893,
+      "significant": true,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.535115016169382,
+        "decoder-only": 0.5926383549942036,
+        "encoder-decoder": 0.5329946915614131
+      }
+    },
+    "ia3__rte": {
+      "F": 1.2454122040737479,
+      "p": 0.30099866038233847,
+      "significant": false,
+      "n_per_arch": [
+        12,
+        12,
+        12
+      ],
+      "means_per_arch": {
+        "encoder-only": 0.5255716004813477,
+        "decoder-only": 0.5481347773766547,
+        "encoder-decoder": 0.5270758122743682
+      }
+    }
+  },
+  "block_b_pairwise": {
+    "comparisons": [
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 48,
+        "mean_delta": -0.08371559633027519,
+        "t_stat": -5.593363414414819,
+        "p_raw": 0.03050829653362757,
+        "cohens_d": -2.227169829254168,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.20417787479399396,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 48,
+        "mean_delta": -0.026376146788990806,
+        "t_stat": -0.9418533635998296,
+        "p_raw": 0.44568925088650135,
+        "cohens_d": -0.6121193668152597,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.548540616475694,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 48,
+        "mean_delta": 0.05733944954128437,
+        "t_stat": 2.6688025634181165,
+        "p_raw": 0.11639260769549624,
+        "cohens_d": 1.10382179220197,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 96,
+        "mean_delta": -0.17622324159021407,
+        "t_stat": -3.0217329518379703,
+        "p_raw": 0.09428507448123608,
+        "cohens_d": -2.831793630483668,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 96,
+        "mean_delta": -0.025611620795107037,
+        "t_stat": -2.4255628577575843,
+        "p_raw": 0.1361129041473566,
+        "cohens_d": -0.5923176275801396,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 96,
+        "mean_delta": 0.15061162079510704,
+        "t_stat": 2.9553971581789877,
+        "p_raw": 0.09795641317424832,
+        "cohens_d": 2.3806755172047955,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 192,
+        "mean_delta": -0.2182721712538226,
+        "t_stat": -4.504449090544794,
+        "p_raw": 0.0459172397938069,
+        "cohens_d": -4.427154778061742,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.234441262275337,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 192,
+        "mean_delta": 0.028669724770642262,
+        "t_stat": 1.4826072532170889,
+        "p_raw": 0.2764001377270895,
+        "cohens_d": 0.40893952809461326,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 192,
+        "mean_delta": 0.24694189602446484,
+        "t_stat": 3.6542109122937805,
+        "p_raw": 0.06740443719437247,
+        "cohens_d": 3.71411607309414,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.2793107364820584,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 384,
+        "mean_delta": -0.04204892966360855,
+        "t_stat": -1.6456448042771015,
+        "p_raw": 0.24157768262987364,
+        "cohens_d": -1.7962924780409895,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.44093521170427685,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 384,
+        "mean_delta": 0.16399082568807344,
+        "t_stat": 2.06202344092342,
+        "p_raw": 0.17531864850245263,
+        "cohens_d": 1.5474160678755546,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.3812129076541318,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "sst2",
+        "sample_size": 384,
+        "mean_delta": 0.20603975535168198,
+        "t_stat": 2.4472710950463714,
+        "p_raw": 0.13417089881350328,
+        "cohens_d": 1.9546698876427386,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 48,
+        "mean_delta": 0.03594771241830067,
+        "t_stat": 3.326087362481202,
+        "p_raw": 0.07973148579736733,
+        "cohens_d": 2.5596107995178605,
+        "n_seeds": 3,
+        "direction": "encoder-only > decoder-only",
+        "p_adjusted": 0.3189259431894693,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 48,
+        "mean_delta": 0.0016339869281045694,
+        "t_stat": 2.0,
+        "p_raw": 0.18350341907227397,
+        "cohens_d": 1.1547005383792515,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.3812129076541318,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 48,
+        "mean_delta": -0.0343137254901961,
+        "t_stat": -3.2118202741878674,
+        "p_raw": 0.08479136935514106,
+        "cohens_d": -2.4432648540852306,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > decoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 96,
+        "mean_delta": -0.021241830065359475,
+        "t_stat": -3.043069827099389,
+        "p_raw": 0.0931458616602978,
+        "cohens_d": -2.4846561093509694,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 96,
+        "mean_delta": 0.0,
+        "t_stat": 0.0,
+        "p_raw": 1.0,
+        "cohens_d": 0.0,
+        "n_seeds": 3,
+        "direction": "equal",
+        "p_adjusted": 1.0,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 96,
+        "mean_delta": 0.021241830065359475,
+        "t_stat": 3.043069827099389,
+        "p_raw": 0.0931458616602978,
+        "cohens_d": 2.4846561093509694,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 192,
+        "mean_delta": -0.058823529411764684,
+        "t_stat": -2.3647902675942984,
+        "p_raw": 0.1417617521774186,
+        "cohens_d": -2.342160175076481,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.3346506936647259,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 192,
+        "mean_delta": -0.007352941176470599,
+        "t_stat": -0.3779644730092272,
+        "p_raw": 0.741801110252839,
+        "cohens_d": -0.3086066999241916,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.8031530817775099,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 192,
+        "mean_delta": 0.05147058823529408,
+        "t_stat": 7.937253933193752,
+        "p_raw": 0.015504815029159688,
+        "cohens_d": 6.480740698407839,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 384,
+        "mean_delta": -0.02205882352941176,
+        "t_stat": -5.8918830363717944,
+        "p_raw": 0.027618751811413336,
+        "cohens_d": -1.5951497164219604,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 384,
+        "mean_delta": 0.03349673202614378,
+        "t_stat": 4.297967830559879,
+        "p_raw": 0.050101002628881335,
+        "cohens_d": 3.509276038589486,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.24048481261863042,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "mrpc",
+        "sample_size": 384,
+        "mean_delta": 0.055555555555555546,
+        "t_stat": 6.799999999999993,
+        "p_raw": 0.020949117674458586,
+        "cohens_d": 5.552176750308523,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 48,
+        "mean_delta": -0.11434498749161022,
+        "t_stat": -7.43364057263173,
+        "p_raw": 0.017619727078154672,
+        "cohens_d": -4.796809594820711,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 48,
+        "mean_delta": 0.010250777960827332,
+        "t_stat": 0.9718454021056022,
+        "p_raw": 0.43363993506749243,
+        "cohens_d": 0.940943937793918,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.5443972493197954,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 48,
+        "mean_delta": 0.12459576545243756,
+        "t_stat": 6.414125212349451,
+        "p_raw": 0.023454870013506345,
+        "cohens_d": 5.78215098306328,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 96,
+        "mean_delta": -0.17932759777899812,
+        "t_stat": -5.222077717873803,
+        "p_raw": 0.03476900384851934,
+        "cohens_d": -3.600892425376972,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.20417787479399396,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 96,
+        "mean_delta": 0.027640490572945264,
+        "t_stat": 1.914154756026184,
+        "p_raw": 0.1957040755634096,
+        "cohens_d": 1.167151755961679,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.3914081511268192,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 96,
+        "mean_delta": 0.20696808835194339,
+        "t_stat": 5.953617330450367,
+        "p_raw": 0.027071879658978164,
+        "cohens_d": 4.654631183296727,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 192,
+        "mean_delta": -0.2166087009579596,
+        "t_stat": -12.543229949670753,
+        "p_raw": 0.006295998621012555,
+        "cohens_d": -8.324324730581424,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.16807987111196962,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 192,
+        "mean_delta": 0.058758923668314145,
+        "t_stat": 10.995128156397119,
+        "p_raw": 0.00817054929016519,
+        "cohens_d": 2.2350035923447815,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.16807987111196962,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 192,
+        "mean_delta": 0.27536762462627373,
+        "t_stat": 21.07843156035496,
+        "p_raw": 0.0022431597978885115,
+        "cohens_d": 13.118825753800776,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.10767167029864855,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 384,
+        "mean_delta": -0.13283299774238821,
+        "t_stat": -96.30481004787129,
+        "p_raw": 0.00010780373549113575,
+        "cohens_d": -11.38776520220508,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.015523737910723548,
+        "significant": true
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 384,
+        "mean_delta": 0.0394166819208005,
+        "t_stat": 1.4722826959349111,
+        "p_raw": 0.2788139095460747,
+        "cohens_d": 1.2023011512124815,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "qnli",
+        "sample_size": 384,
+        "mean_delta": 0.17224967966318872,
+        "t_stat": 6.149626294608844,
+        "p_raw": 0.025437873456473695,
+        "cohens_d": 5.20686110304213,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 48,
+        "mean_delta": -0.03610108303249099,
+        "t_stat": -1.986798535597566,
+        "p_raw": 0.18531183010964739,
+        "cohens_d": -1.1840055569457897,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.3812129076541318,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 48,
+        "mean_delta": 0.024067388688327324,
+        "t_stat": 1.6439898730535758,
+        "p_raw": 0.24190195642109605,
+        "cohens_d": 0.6792356108113243,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.44093521170427685,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 48,
+        "mean_delta": 0.060168471720818316,
+        "t_stat": 2.6207120918048,
+        "p_raw": 0.11995832023904608,
+        "cohens_d": 2.2405535747411083,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 96,
+        "mean_delta": -0.06618531889290018,
+        "t_stat": -3.958986629117813,
+        "p_raw": 0.058279922281224306,
+        "cohens_d": -1.9963735237617253,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.2543123881362515,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 96,
+        "mean_delta": 0.0457280385078219,
+        "t_stat": 3.639739883840361,
+        "p_raw": 0.06788802622827808,
+        "cohens_d": 1.0808722355782892,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.2793107364820584,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 96,
+        "mean_delta": 0.11191335740072207,
+        "t_stat": 8.597853041491033,
+        "p_raw": 0.013259128177193054,
+        "cohens_d": 3.02049958144658,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 192,
+        "mean_delta": -0.04091456077015646,
+        "t_stat": -1.4228557160835393,
+        "p_raw": 0.2907425523358843,
+        "cohens_d": -1.352982687842881,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 192,
+        "mean_delta": 0.07581227436823103,
+        "t_stat": 6.8738635424337735,
+        "p_raw": 0.020515001164304412,
+        "cohens_d": 2.086138462377445,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 192,
+        "mean_delta": 0.1167268351383875,
+        "t_stat": 5.482764163758954,
+        "p_raw": 0.031693057019307545,
+        "cohens_d": 4.5650218117496175,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.20417787479399396,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 384,
+        "mean_delta": -0.10469314079422383,
+        "t_stat": -4.510739872077356,
+        "p_raw": 0.04579791240929018,
+        "cohens_d": -5.180774607326108,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.234441262275337,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 384,
+        "mean_delta": 0.05776173285198553,
+        "t_stat": 5.237229365663814,
+        "p_raw": 0.03457841594904445,
+        "cohens_d": 3.843075691322089,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.20417787479399396,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "lora",
+        "task": "rte",
+        "sample_size": 384,
+        "mean_delta": 0.16245487364620936,
+        "t_stat": 11.25000000000001,
+        "p_raw": 0.0078088066695469124,
+        "cohens_d": 9.522165814091082,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.16807987111196962,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 48,
+        "mean_delta": -0.0049694189602446275,
+        "t_stat": -0.2898927252333381,
+        "p_raw": 0.7991903764969575,
+        "cohens_d": -0.2324023797025368,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.8462015751144255,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 48,
+        "mean_delta": -0.04816513761467891,
+        "t_stat": -6.7253824598136305,
+        "p_raw": 0.021401653829807722,
+        "cohens_d": -2.218220478683354,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 48,
+        "mean_delta": -0.04319571865443428,
+        "t_stat": -3.0211312017826346,
+        "p_raw": 0.09431749044174377,
+        "cohens_d": -2.7984531583948598,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > decoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 96,
+        "mean_delta": -0.04013761467889909,
+        "t_stat": -1.4933103254700097,
+        "p_raw": 0.2739255904525452,
+        "cohens_d": -1.1329689236281308,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 96,
+        "mean_delta": -0.05122324159021411,
+        "t_stat": -2.4785083746594303,
+        "p_raw": 0.13144350364388693,
+        "cohens_d": -1.0095182409059456,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 96,
+        "mean_delta": -0.01108562691131502,
+        "t_stat": -0.25490627249459596,
+        "p_raw": 0.8226125498257325,
+        "cohens_d": -0.2043520726620408,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > decoder-only",
+        "p_adjusted": 0.8646438479920109,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 192,
+        "mean_delta": -0.13035168195718652,
+        "t_stat": -2.7880663055564905,
+        "p_raw": 0.10816979341294809,
+        "cohens_d": -2.7472765860955595,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 192,
+        "mean_delta": -0.05925076452599387,
+        "t_stat": -1.4679583730179284,
+        "p_raw": 0.27983276389515116,
+        "cohens_d": -0.9551809486378238,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 192,
+        "mean_delta": 0.07110091743119266,
+        "t_stat": 0.8235249639608752,
+        "p_raw": 0.49678242132373684,
+        "cohens_d": 0.9309547181301446,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.5912121377737033,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 384,
+        "mean_delta": -0.16590214067278286,
+        "t_stat": -2.741733212713793,
+        "p_raw": 0.11126383386603038,
+        "cohens_d": -2.8117573044488564,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 384,
+        "mean_delta": -0.037461773700305824,
+        "t_stat": -0.9690154823758398,
+        "p_raw": 0.43476169216511434,
+        "cohens_d": -0.32579362354235186,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.5443972493197954,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "sst2",
+        "sample_size": 384,
+        "mean_delta": 0.12844036697247704,
+        "t_stat": 1.3113699266047767,
+        "p_raw": 0.32005813370077346,
+        "cohens_d": 1.2350395705459387,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.475992414947494,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 48,
+        "mean_delta": 0.04983660130718955,
+        "t_stat": 1.2839971373210495,
+        "p_raw": 0.32780073501092544,
+        "cohens_d": 1.0367315212994728,
+        "n_seeds": 3,
+        "direction": "encoder-only > decoder-only",
+        "p_adjusted": 0.4764741078490804,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 48,
+        "mean_delta": 0.0016339869281045694,
+        "t_stat": 2.0,
+        "p_raw": 0.18350341907227397,
+        "cohens_d": 1.1547005383792515,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.3812129076541318,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 48,
+        "mean_delta": -0.04820261437908498,
+        "t_stat": -1.2544676039095595,
+        "p_raw": 0.33640810267257726,
+        "cohens_d": -1.002740323879818,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > decoder-only",
+        "p_adjusted": 0.4764741078490804,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 96,
+        "mean_delta": 0.02614379084967326,
+        "t_stat": 2.774751902477189,
+        "p_raw": 0.10904632577647243,
+        "cohens_d": 2.2655754412953444,
+        "n_seeds": 3,
+        "direction": "encoder-only > decoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 96,
+        "mean_delta": 0.0,
+        "t_stat": 0.0,
+        "p_raw": 1.0,
+        "cohens_d": 0.0,
+        "n_seeds": 3,
+        "direction": "equal",
+        "p_adjusted": 1.0,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 96,
+        "mean_delta": -0.02614379084967326,
+        "t_stat": -2.774751902477189,
+        "p_raw": 0.10904632577647243,
+        "cohens_d": -2.2655754412953444,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > decoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 192,
+        "mean_delta": 0.004084967320261461,
+        "t_stat": 0.310684883000602,
+        "p_raw": 0.7854294622885615,
+        "cohens_d": 0.19826289642954642,
+        "n_seeds": 3,
+        "direction": "encoder-only > decoder-only",
+        "p_adjusted": 0.8377914264411322,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 192,
+        "mean_delta": -0.004901960784313708,
+        "t_stat": -1.3093073414159544,
+        "p_raw": 0.3206337795132425,
+        "cohens_d": -1.0690449676496976,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.475992414947494,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 192,
+        "mean_delta": -0.008986928104575168,
+        "t_stat": -0.5479490295253907,
+        "p_raw": 0.6387125980064253,
+        "cohens_d": -0.44739850913015644,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > decoder-only",
+        "p_adjusted": 0.7212971471769345,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 384,
+        "mean_delta": -0.024509803921568613,
+        "t_stat": -3.973597071195119,
+        "p_raw": 0.05788856046800875,
+        "cohens_d": -2.3042861179277176,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.2543123881362515,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 384,
+        "mean_delta": -0.004084967320261423,
+        "t_stat": -1.25,
+        "p_raw": 0.3377338214674781,
+        "cohens_d": -1.0206207261597129,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.4764741078490804,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "mrpc",
+        "sample_size": 384,
+        "mean_delta": 0.02042483660130719,
+        "t_stat": 2.5383654128340454,
+        "p_raw": 0.12642930273173497,
+        "cohens_d": 2.0725666807241865,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 48,
+        "mean_delta": -0.02153883702483376,
+        "t_stat": -1.4282370887193323,
+        "p_raw": 0.28941328180646864,
+        "cohens_d": -1.6330521372690643,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 48,
+        "mean_delta": 0.0033559094514613217,
+        "t_stat": 0.7454929183745969,
+        "p_raw": 0.5336805670692473,
+        "cohens_d": 0.34959235584280485,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.6148000132637729,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 48,
+        "mean_delta": 0.024894746476295082,
+        "t_stat": 2.2644661714989365,
+        "p_raw": 0.15182030774490474,
+        "cohens_d": 2.382362439947875,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.34159569242603566,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 96,
+        "mean_delta": -0.024833729940813936,
+        "t_stat": -0.9898165502727486,
+        "p_raw": 0.4265893449916962,
+        "cohens_d": -1.0586151220370734,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.5436182803434005,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 96,
+        "mean_delta": 0.022698151198974965,
+        "t_stat": 1.4538017467661632,
+        "p_raw": 0.28320106835034375,
+        "cohens_d": 1.175483071133724,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 96,
+        "mean_delta": 0.0475318811397889,
+        "t_stat": 5.010190236383939,
+        "p_raw": 0.03760469398776721,
+        "cohens_d": 3.0557126956942224,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.20827215131686455,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 192,
+        "mean_delta": -0.02965403624382205,
+        "t_stat": -1.4476408319331013,
+        "p_raw": 0.2846828047620551,
+        "cohens_d": -1.398354174370692,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 192,
+        "mean_delta": 0.0149490511928733,
+        "t_stat": 1.5365711883267343,
+        "p_raw": 0.26420454303069446,
+        "cohens_d": 0.6565592743660461,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 192,
+        "mean_delta": 0.04460308743669535,
+        "t_stat": 2.443750232323141,
+        "p_raw": 0.13448324221666164,
+        "cohens_d": 2.746538961329694,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 384,
+        "mean_delta": -0.04380987247544088,
+        "t_stat": -4.076388318418329,
+        "p_raw": 0.055240258315992725,
+        "cohens_d": -3.3254642513280808,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.2543123881362515,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 384,
+        "mean_delta": 0.002318628348282411,
+        "t_stat": 0.0722641133406256,
+        "p_raw": 0.9489681353893618,
+        "cohens_d": 0.06856905007409221,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.9691589467806246,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "qnli",
+        "sample_size": 384,
+        "mean_delta": 0.046128500823723294,
+        "t_stat": 1.585491105952011,
+        "p_raw": 0.25373423686199553,
+        "cohens_d": 1.4482280286658646,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 48,
+        "mean_delta": -0.001203369434416346,
+        "t_stat": -0.14285714285714005,
+        "p_raw": 0.8994962184740808,
+        "cohens_d": -0.028358098403710157,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.9251961104304832,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 48,
+        "mean_delta": 0.0120336943441637,
+        "t_stat": 0.7624928516630243,
+        "p_raw": 0.52542100212375,
+        "cohens_d": 0.311739843194274,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.6138528145652546,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 48,
+        "mean_delta": 0.013237063778580046,
+        "t_stat": 1.0536089137432683,
+        "p_raw": 0.40256200874707404,
+        "cohens_d": 0.30122858042986617,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.5269902659961696,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 96,
+        "mean_delta": -0.007220216606498168,
+        "t_stat": -0.7559289460184527,
+        "p_raw": 0.5285954792089692,
+        "cohens_d": -0.17747130188322244,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.6138528145652546,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 96,
+        "mean_delta": 0.01323706377857999,
+        "t_stat": 1.8083888603589315,
+        "p_raw": 0.21227363855662357,
+        "cohens_d": 0.3207665139358923,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.41873156098840814,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 96,
+        "mean_delta": 0.020457280385078158,
+        "t_stat": 2.5924756956542687,
+        "p_raw": 0.12212377485965299,
+        "cohens_d": 0.43893811257017373,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 192,
+        "mean_delta": -0.003610108303249112,
+        "t_stat": -0.1501878522965284,
+        "p_raw": 0.8943949984286851,
+        "cohens_d": -0.13093073414159734,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.9251961104304832,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 192,
+        "mean_delta": 0.0385078219013237,
+        "t_stat": 2.4399771253216738,
+        "p_raw": 0.1348190873025999,
+        "cohens_d": 1.7007808110487475,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 192,
+        "mean_delta": 0.04211793020457281,
+        "t_stat": 2.126098587307752,
+        "p_raw": 0.16737438087783893,
+        "cohens_d": 1.207614728849122,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.37079862840628935,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 384,
+        "mean_delta": -0.019253910950661868,
+        "t_stat": -0.7742942695933231,
+        "p_raw": 0.5197598198498689,
+        "cohens_d": -0.44495974252412224,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.6134870004785337,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 384,
+        "mean_delta": 0.012033694344163681,
+        "t_stat": 1.6439898730535745,
+        "p_raw": 0.2419019564210963,
+        "cohens_d": 0.5360562674188988,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.44093521170427685,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "bitfit",
+        "task": "rte",
+        "sample_size": 384,
+        "mean_delta": 0.03128760529482555,
+        "t_stat": 1.6748072286421603,
+        "p_raw": 0.23595477080049665,
+        "cohens_d": 0.690942204488557,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.44093521170427685,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 48,
+        "mean_delta": -0.01720183486238534,
+        "t_stat": -2.2874785549890766,
+        "p_raw": 0.14942803431438528,
+        "cohens_d": -1.0797236261230425,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.34159569242603566,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 48,
+        "mean_delta": -0.04357798165137611,
+        "t_stat": -1.4462859742340197,
+        "p_raw": 0.2850099564806251,
+        "cohens_d": -1.4615384615384615,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 48,
+        "mean_delta": -0.026376146788990768,
+        "t_stat": -0.8654121436552803,
+        "p_raw": 0.4780360626141596,
+        "cohens_d": -0.9091548272984082,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > decoder-only",
+        "p_adjusted": 0.5784638068608319,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 96,
+        "mean_delta": -0.0565749235474006,
+        "t_stat": -2.2736964483625943,
+        "p_raw": 0.15085447246425096,
+        "cohens_d": -1.5863163503677962,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.34159569242603566,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 96,
+        "mean_delta": -0.05772171253822626,
+        "t_stat": -1.3176847212715759,
+        "p_raw": 0.3183035290781252,
+        "cohens_d": -0.9297634727479316,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.475992414947494,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 96,
+        "mean_delta": -0.0011467889908256534,
+        "t_stat": -0.01674514966749042,
+        "p_raw": 0.98816022105766,
+        "cohens_d": -0.016821974430825257,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > decoder-only",
+        "p_adjusted": 1.0,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 192,
+        "mean_delta": -0.1418195718654434,
+        "t_stat": -2.7583071348126813,
+        "p_raw": 0.1101428608334161,
+        "cohens_d": -2.46268472175694,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 192,
+        "mean_delta": -0.08486238532110091,
+        "t_stat": -1.2315670730625854,
+        "p_raw": 0.34326999233577127,
+        "cohens_d": -0.9443816376467885,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.4764741078490804,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 192,
+        "mean_delta": 0.05695718654434249,
+        "t_stat": 0.4851876061035128,
+        "p_raw": 0.6754875270913892,
+        "cohens_d": 0.5351754637936296,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.7425206404668706,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 384,
+        "mean_delta": -0.24006116207951067,
+        "t_stat": -5.952406090188243,
+        "p_raw": 0.027082454778376373,
+        "cohens_d": -6.8144228922750845,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 384,
+        "mean_delta": -0.07492354740061162,
+        "t_stat": -1.117321638254671,
+        "p_raw": 0.38006958012193337,
+        "cohens_d": -0.7055473963471188,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.5103821335355098,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "sst2",
+        "sample_size": 384,
+        "mean_delta": 0.16513761467889906,
+        "t_stat": 1.538867930523767,
+        "p_raw": 0.26370077749276993,
+        "cohens_d": 1.5354523392641488,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 48,
+        "mean_delta": 0.0473856209150327,
+        "t_stat": 1.2599767033809661,
+        "p_raw": 0.33478189471572506,
+        "cohens_d": 1.0166055986292621,
+        "n_seeds": 3,
+        "direction": "encoder-only > decoder-only",
+        "p_adjusted": 0.4764741078490804,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 48,
+        "mean_delta": 0.0016339869281045694,
+        "t_stat": 2.0,
+        "p_raw": 0.18350341907227397,
+        "cohens_d": 1.1547005383792515,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.3812129076541318,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 48,
+        "mean_delta": -0.04575163398692813,
+        "t_stat": -1.2287676773152192,
+        "p_raw": 0.3441201890021136,
+        "cohens_d": -0.9815502331592876,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > decoder-only",
+        "p_adjusted": 0.4764741078490804,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 96,
+        "mean_delta": 0.013888888888888914,
+        "t_stat": 6.425396041156794,
+        "p_raw": 0.023375517643576146,
+        "cohens_d": 3.709704134011828,
+        "n_seeds": 3,
+        "direction": "encoder-only > decoder-only",
+        "p_adjusted": 0.198855013042176,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 96,
+        "mean_delta": 0.0008169934640522847,
+        "t_stat": 1.0,
+        "p_raw": 0.4226497308103742,
+        "cohens_d": 0.8164965809275041,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.5434067967561954,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 96,
+        "mean_delta": -0.01307189542483663,
+        "t_stat": -4.437601569801805,
+        "p_raw": 0.0472138653193387,
+        "cohens_d": -3.6232865092627238,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > decoder-only",
+        "p_adjusted": 0.234441262275337,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 192,
+        "mean_delta": -0.008986928104575131,
+        "t_stat": -0.9538209664765266,
+        "p_raw": 0.44083857544711835,
+        "cohens_d": -0.6168493695012305,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.54724788676194,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 192,
+        "mean_delta": -0.0032679738562091387,
+        "t_stat": -1.1094003924504583,
+        "p_raw": 0.38278660015163235,
+        "cohens_d": -0.9058216273156765,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.5103821335355098,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 192,
+        "mean_delta": 0.005718954248365993,
+        "t_stat": 0.49621684350583256,
+        "p_raw": 0.6689113611117201,
+        "cohens_d": 0.40515935612124504,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.7409479692314438,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 384,
+        "mean_delta": -0.03676470588235292,
+        "t_stat": -25.980762113533242,
+        "p_raw": 0.0014781974082349323,
+        "cohens_d": -8.911327886790069,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.10643021339291513,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 384,
+        "mean_delta": -0.0016339869281045694,
+        "t_stat": -1.0,
+        "p_raw": 0.4226497308103742,
+        "cohens_d": -0.816496580927726,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.5434067967561954,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "mrpc",
+        "sample_size": 384,
+        "mean_delta": 0.03513071895424835,
+        "t_stat": 11.926054218842463,
+        "p_raw": 0.006957536993843643,
+        "cohens_d": 9.737582493643522,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.16807987111196962,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 48,
+        "mean_delta": -0.0217829031667582,
+        "t_stat": -1.5845085099959293,
+        "p_raw": 0.25393926759087243,
+        "cohens_d": -1.770246724782384,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 48,
+        "mean_delta": 0.002135578741839043,
+        "t_stat": 0.5436985452510467,
+        "p_raw": 0.6411530197128307,
+        "cohens_d": 0.14133024202288144,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.7212971471769345,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 48,
+        "mean_delta": 0.023918481908597244,
+        "t_stat": 1.4922428041927775,
+        "p_raw": 0.2741711434591172,
+        "cohens_d": 1.570672416596439,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 96,
+        "mean_delta": -0.0424064921593752,
+        "t_stat": -1.7088395944069374,
+        "p_raw": 0.2296060075423752,
+        "cohens_d": -1.9420076074982595,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.44093521170427685,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 96,
+        "mean_delta": 0.0217829031667582,
+        "t_stat": 1.6697746174514907,
+        "p_raw": 0.23691291200729903,
+        "cohens_d": 1.3348896164698667,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.44093521170427685,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 96,
+        "mean_delta": 0.0641893953261334,
+        "t_stat": 5.169111916356103,
+        "p_raw": 0.03544754770729062,
+        "cohens_d": 4.4017121700551005,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.20417787479399396,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 192,
+        "mean_delta": -0.058758923668314145,
+        "t_stat": -2.7423546366033635,
+        "p_raw": 0.11122151399749597,
+        "cohens_d": -2.9348437264593517,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 192,
+        "mean_delta": 0.0068948685093660105,
+        "t_stat": 0.41374180658933335,
+        "p_raw": 0.7192102415388533,
+        "cohens_d": 0.22196580748763062,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.7845929907696582,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 192,
+        "mean_delta": 0.06565379217768015,
+        "t_stat": 2.42106045160786,
+        "p_raw": 0.13652057631151998,
+        "cohens_d": 2.452329692528826,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 384,
+        "mean_delta": -0.10714503630483863,
+        "t_stat": -9.679964559282666,
+        "p_raw": 0.010504303862873699,
+        "cohens_d": -7.7368840823242,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.18907746953172658,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 384,
+        "mean_delta": -0.02233205198608827,
+        "t_stat": -0.5633977177222583,
+        "p_raw": 0.6299051939554701,
+        "cohens_d": -0.5006879767280235,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.7198916502348229,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "qnli",
+        "sample_size": 384,
+        "mean_delta": 0.08481298431875035,
+        "t_stat": 2.4283671727736342,
+        "p_raw": 0.13585984135660023,
+        "cohens_d": 2.0001915289840806,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 48,
+        "mean_delta": -0.003610108303249112,
+        "t_stat": -0.21821789023599292,
+        "p_raw": 0.847501429667395,
+        "cohens_d": -0.08776207771572504,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.8843493179138034,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 48,
+        "mean_delta": 0.013237063778580046,
+        "t_stat": 1.1168807816469808,
+        "p_raw": 0.3802202131990879,
+        "cohens_d": 0.47270854685289226,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.5103821335355098,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 48,
+        "mean_delta": 0.01684717208182916,
+        "t_stat": 1.0769230769230782,
+        "p_raw": 0.39416074862891787,
+        "cohens_d": 0.46511884592956687,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.5207261266290291,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 96,
+        "mean_delta": -0.030084235860409148,
+        "t_stat": -1.6004609991612002,
+        "p_raw": 0.25063668833727404,
+        "cohens_d": -0.8490445135141531,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.4453928461315675,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 96,
+        "mean_delta": -0.024067388688327324,
+        "t_stat": -1.2803687993289596,
+        "p_raw": 0.3288439447859757,
+        "cohens_d": -0.6579516949597695,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.4764741078490804,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 96,
+        "mean_delta": 0.006016847172081822,
+        "t_stat": 0.3200921998322394,
+        "p_raw": 0.7792446071558263,
+        "cohens_d": 0.12539246564387757,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.8373971897793955,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 192,
+        "mean_delta": -0.012033694344163645,
+        "t_stat": -0.4981354813867178,
+        "p_raw": 0.6677722529074523,
+        "cohens_d": -0.43831833031891865,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.7409479692314438,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 192,
+        "mean_delta": 0.024067388688327345,
+        "t_stat": 2.443388887126095,
+        "p_raw": 0.1345153551841699,
+        "cohens_d": 1.0127393670836677,
+        "n_seeds": 3,
+        "direction": "encoder-only > encoder-decoder",
+        "p_adjusted": 0.32764938314764797,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 192,
+        "mean_delta": 0.03610108303249099,
+        "t_stat": 1.1598670095405883,
+        "p_raw": 0.36585114356488635,
+        "cohens_d": 1.0731409403834455,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.5017387111747013,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "decoder-only",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 384,
+        "mean_delta": -0.04452466907340554,
+        "t_stat": -1.9393269479355513,
+        "p_raw": 0.19201646876748368,
+        "cohens_d": -1.3817903209005535,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-only",
+        "p_adjusted": 0.3894418521481359,
+        "significant": false
+      },
+      {
+        "arch1": "encoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 384,
+        "mean_delta": -0.019253910950661868,
+        "t_stat": -0.8284485969255968,
+        "p_raw": 0.49454078111474903,
+        "cohens_d": -0.696310623822788,
+        "n_seeds": 3,
+        "direction": "encoder-decoder > encoder-only",
+        "p_adjusted": 0.5912121377737033,
+        "significant": false
+      },
+      {
+        "arch1": "decoder-only",
+        "arch2": "encoder-decoder",
+        "method": "ia3",
+        "task": "rte",
+        "sample_size": 384,
+        "mean_delta": 0.02527075812274367,
+        "t_stat": 0.881917103688196,
+        "p_raw": 0.4708497377870823,
+        "cohens_d": 0.601721667814319,
+        "n_seeds": 3,
+        "direction": "decoder-only > encoder-decoder",
+        "p_adjusted": 0.5745962901808462,
+        "significant": false
+      }
+    ],
+    "n_total": 144,
+    "n_significant": 1,
+    "significant_direction_counts": {
+      "decoder-only > encoder-only": 1
+    },
+    "fdr_method": "Benjamini-Hochberg",
+    "alpha": 0.05
+  },
+  "block_c_interaction": {
+    "per_cell": {
+      "sst2__n48": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "bitfit"
+        },
+        "methods_agree": false
+      },
+      "sst2__n96": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "bitfit"
+        },
+        "methods_agree": false
+      },
+      "sst2__n192": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "ia3"
+        },
+        "methods_agree": false
+      },
+      "sst2__n384": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "lora"
+        },
+        "methods_agree": true
+      },
+      "mrpc__n48": {
+        "best_method_per_arch": {
+          "encoder-only": "bitfit",
+          "decoder-only": "lora",
+          "encoder-decoder": "bitfit"
+        },
+        "methods_agree": false
+      },
+      "mrpc__n96": {
+        "best_method_per_arch": {
+          "encoder-only": "ia3",
+          "decoder-only": "lora",
+          "encoder-decoder": "bitfit"
+        },
+        "methods_agree": false
+      },
+      "mrpc__n192": {
+        "best_method_per_arch": {
+          "encoder-only": "ia3",
+          "decoder-only": "lora",
+          "encoder-decoder": "bitfit"
+        },
+        "methods_agree": false
+      },
+      "mrpc__n384": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "bitfit"
+        },
+        "methods_agree": false
+      },
+      "qnli__n48": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "ia3"
+        },
+        "methods_agree": false
+      },
+      "qnli__n96": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "lora"
+        },
+        "methods_agree": true
+      },
+      "qnli__n192": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "ia3"
+        },
+        "methods_agree": false
+      },
+      "qnli__n384": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "lora"
+        },
+        "methods_agree": true
+      },
+      "rte__n48": {
+        "best_method_per_arch": {
+          "encoder-only": "bitfit",
+          "decoder-only": "lora",
+          "encoder-decoder": "bitfit"
+        },
+        "methods_agree": false
+      },
+      "rte__n96": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "ia3"
+        },
+        "methods_agree": false
+      },
+      "rte__n192": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "ia3"
+        },
+        "methods_agree": false
+      },
+      "rte__n384": {
+        "best_method_per_arch": {
+          "encoder-only": "lora",
+          "decoder-only": "lora",
+          "encoder-decoder": "ia3"
+        },
+        "methods_agree": false
+      }
+    },
+    "n_cells": 16,
+    "n_method_agreement": 3,
+    "method_agreement_rate": 0.1875
+  },
+  "block_d_collapse": {
+    "by_arch": {
+      "encoder-only": {
+        "collapsed": 22,
+        "total": 144,
+        "rate": 0.1528
+      },
+      "decoder-only": {
+        "collapsed": 28,
+        "total": 144,
+        "rate": 0.1944
+      },
+      "encoder-decoder": {
+        "collapsed": 28,
+        "total": 144,
+        "rate": 0.1944
+      }
+    },
+    "by_method": {
+      "lora": {
+        "collapsed": 20,
+        "total": 144,
+        "rate": 0.1389
+      },
+      "bitfit": {
+        "collapsed": 29,
+        "total": 144,
+        "rate": 0.2014
+      },
+      "ia3": {
+        "collapsed": 29,
+        "total": 144,
+        "rate": 0.2014
+      }
+    },
+    "by_task": {
+      "sst2": {
+        "collapsed": 5,
+        "total": 108,
+        "rate": 0.0463
+      },
+      "mrpc": {
+        "collapsed": 29,
+        "total": 108,
+        "rate": 0.2685
+      },
+      "qnli": {
+        "collapsed": 3,
+        "total": 108,
+        "rate": 0.0278
+      },
+      "rte": {
+        "collapsed": 41,
+        "total": 108,
+        "rate": 0.3796
+      }
+    },
+    "by_size": {
+      "48": {
+        "collapsed": 37,
+        "total": 108,
+        "rate": 0.3426
+      },
+      "96": {
+        "collapsed": 20,
+        "total": 108,
+        "rate": 0.1852
+      },
+      "192": {
+        "collapsed": 15,
+        "total": 108,
+        "rate": 0.1389
+      },
+      "384": {
+        "collapsed": 6,
+        "total": 108,
+        "rate": 0.0556
+      }
+    },
+    "fine_grained": {
+      "encoder-only__lora__sst2__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-only__lora__sst2__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__lora__sst2__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__lora__sst2__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__lora__mrpc__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__lora__mrpc__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__lora__mrpc__n192": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-only__lora__mrpc__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__lora__qnli__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__lora__qnli__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__lora__qnli__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__lora__qnli__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__lora__rte__n48": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-only__lora__rte__n96": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-only__lora__rte__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__lora__rte__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__bitfit__sst2__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-only__bitfit__sst2__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__bitfit__sst2__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__bitfit__sst2__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__bitfit__mrpc__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__bitfit__mrpc__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__bitfit__mrpc__n192": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-only__bitfit__mrpc__n384": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-only__bitfit__qnli__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__bitfit__qnli__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__bitfit__qnli__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__bitfit__qnli__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__bitfit__rte__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-only__bitfit__rte__n96": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-only__bitfit__rte__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__bitfit__rte__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__ia3__sst2__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-only__ia3__sst2__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__ia3__sst2__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__ia3__sst2__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__ia3__mrpc__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__ia3__mrpc__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__ia3__mrpc__n192": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-only__ia3__mrpc__n384": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-only__ia3__qnli__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__ia3__qnli__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__ia3__qnli__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__ia3__qnli__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__ia3__rte__n48": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-only__ia3__rte__n96": {
+        "collapsed": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "encoder-only__ia3__rte__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-only__ia3__rte__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__sst2__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__sst2__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__sst2__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__sst2__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__mrpc__n48": {
+        "collapsed": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "decoder-only__lora__mrpc__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__mrpc__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__mrpc__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__qnli__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__qnli__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__qnli__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__qnli__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__rte__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "decoder-only__lora__rte__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__rte__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__lora__rte__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__bitfit__sst2__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__bitfit__sst2__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__bitfit__sst2__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__bitfit__sst2__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__bitfit__mrpc__n48": {
+        "collapsed": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "decoder-only__bitfit__mrpc__n96": {
+        "collapsed": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "decoder-only__bitfit__mrpc__n192": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "decoder-only__bitfit__mrpc__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__bitfit__qnli__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__bitfit__qnli__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__bitfit__qnli__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__bitfit__qnli__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__bitfit__rte__n48": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "decoder-only__bitfit__rte__n96": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "decoder-only__bitfit__rte__n192": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "decoder-only__bitfit__rte__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__ia3__sst2__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "decoder-only__ia3__sst2__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__ia3__sst2__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__ia3__sst2__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__ia3__mrpc__n48": {
+        "collapsed": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "decoder-only__ia3__mrpc__n96": {
+        "collapsed": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "decoder-only__ia3__mrpc__n192": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "decoder-only__ia3__mrpc__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__ia3__qnli__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__ia3__qnli__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__ia3__qnli__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__ia3__qnli__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "decoder-only__ia3__rte__n48": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "decoder-only__ia3__rte__n96": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "decoder-only__ia3__rte__n192": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "decoder-only__ia3__rte__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__lora__sst2__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-decoder__lora__sst2__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__lora__sst2__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__lora__sst2__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__lora__mrpc__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-decoder__lora__mrpc__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__lora__mrpc__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__lora__mrpc__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__lora__qnli__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-decoder__lora__qnli__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__lora__qnli__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__lora__qnli__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__lora__rte__n48": {
+        "collapsed": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "encoder-decoder__lora__rte__n96": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-decoder__lora__rte__n192": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-decoder__lora__rte__n384": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-decoder__bitfit__sst2__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__bitfit__sst2__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__bitfit__sst2__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__bitfit__sst2__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__bitfit__mrpc__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-decoder__bitfit__mrpc__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__bitfit__mrpc__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__bitfit__mrpc__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__bitfit__qnli__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__bitfit__qnli__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__bitfit__qnli__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__bitfit__qnli__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__bitfit__rte__n48": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-decoder__bitfit__rte__n96": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-decoder__bitfit__rte__n192": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-decoder__bitfit__rte__n384": {
+        "collapsed": 2,
+        "total": 3,
+        "rate": 0.6667
+      },
+      "encoder-decoder__ia3__sst2__n48": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__ia3__sst2__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__ia3__sst2__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__ia3__sst2__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__ia3__mrpc__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-decoder__ia3__mrpc__n96": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__ia3__mrpc__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__ia3__mrpc__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__ia3__qnli__n48": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-decoder__ia3__qnli__n96": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-decoder__ia3__qnli__n192": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__ia3__qnli__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      },
+      "encoder-decoder__ia3__rte__n48": {
+        "collapsed": 3,
+        "total": 3,
+        "rate": 1.0
+      },
+      "encoder-decoder__ia3__rte__n96": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-decoder__ia3__rte__n192": {
+        "collapsed": 1,
+        "total": 3,
+        "rate": 0.3333
+      },
+      "encoder-decoder__ia3__rte__n384": {
+        "collapsed": 0,
+        "total": 3,
+        "rate": 0.0
+      }
+    },
+    "summary": {
+      "total_collapsed": 78,
+      "total_runs": 432,
+      "overall_rate": 0.1806,
+      "fine_cells_over_20pct": 47,
+      "fine_cells_over_50pct": 23,
+      "fine_total_cells": 144
+    }
+  },
+  "metadata": {
+    "n_runs": 432,
+    "archs": [
+      "encoder-only",
+      "decoder-only",
+      "encoder-decoder"
+    ],
+    "methods": [
+      "lora",
+      "bitfit",
+      "ia3"
+    ],
+    "tasks": [
+      "sst2",
+      "mrpc",
+      "qnli",
+      "rte"
+    ],
+    "sizes": [
+      48,
+      96,
+      192,
+      384
+    ],
+    "seeds": [
+      7,
+      13,
+      29
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+# Experiment requirements (Path B: re-run the full 432-run grid).
+# Requires a bf16-capable GPU. Python 3.11 (tested on 3.11.15).
+# Pinned to the versions used to produce the published results.
+#
+# Install PyTorch separately for your CUDA build first, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+# (see https://pytorch.org/get-started/locally/ for the right command;
+#  tested with torch 2.11.0+cu128)
+#
+# Then install the rest:
+transformers==5.4.0
+peft==0.18.1
+datasets==4.8.4
+sentencepiece==0.2.1
+numpy==2.4.4
+pandas==3.0.1
+scipy==1.17.1
+statsmodels==0.14.6
+matplotlib==3.10.8

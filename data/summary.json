@@ -1,0 +1,1010 @@
+{
+  "decoder-only__bitfit__mrpc__n192": {
+    "mean_accuracy": 0.6748366013071895,
+    "std_accuracy": 0.028407416095937395,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "decoder-only__bitfit__mrpc__n384": {
+    "mean_accuracy": 0.704248366013072,
+    "std_accuracy": 0.013936864468326794,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__bitfit__mrpc__n48": {
+    "mean_accuracy": 0.6348039215686274,
+    "std_accuracy": 0.06796776776402963,
+    "n_runs": 3,
+    "collapsed_count": 3,
+    "collapse_rate": 1.0
+  },
+  "decoder-only__bitfit__mrpc__n96": {
+    "mean_accuracy": 0.6576797385620914,
+    "std_accuracy": 0.01631943166293969,
+    "n_runs": 3,
+    "collapsed_count": 3,
+    "collapse_rate": 1.0
+  },
+  "decoder-only__bitfit__qnli__n192": {
+    "mean_accuracy": 0.5761181280126915,
+    "std_accuracy": 0.01396505750262987,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__bitfit__qnli__n384": {
+    "mean_accuracy": 0.6093721398498994,
+    "std_accuracy": 0.006683191017217155,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__bitfit__qnli__n48": {
+    "mean_accuracy": 0.5353590823113064,
+    "std_accuracy": 0.013820346306857521,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__bitfit__qnli__n96": {
+    "mean_accuracy": 0.5586673988650924,
+    "std_accuracy": 0.020479480021021634,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__bitfit__rte__n192": {
+    "mean_accuracy": 0.5499398315282792,
+    "std_accuracy": 0.038262606728242214,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "decoder-only__bitfit__rte__n384": {
+    "mean_accuracy": 0.5679903730445247,
+    "std_accuracy": 0.058471868174519125,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__bitfit__rte__n48": {
+    "mean_accuracy": 0.5126353790613719,
+    "std_accuracy": 0.047346126529256315,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "decoder-only__bitfit__rte__n96": {
+    "mean_accuracy": 0.5270758122743682,
+    "std_accuracy": 0.04609077738196281,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "decoder-only__bitfit__sst2__n192": {
+    "mean_accuracy": 0.6551987767584098,
+    "std_accuracy": 0.06508806316144576,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__bitfit__sst2__n384": {
+    "mean_accuracy": 0.7335626911314984,
+    "std_accuracy": 0.0327855988415773,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__bitfit__sst2__n48": {
+    "mean_accuracy": 0.5210244648318042,
+    "std_accuracy": 0.014966951032455586,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__bitfit__sst2__n96": {
+    "mean_accuracy": 0.5829510703363914,
+    "std_accuracy": 0.04029022973393893,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__ia3__mrpc__n192": {
+    "mean_accuracy": 0.6895424836601306,
+    "std_accuracy": 0.01996207797854679,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "decoder-only__ia3__mrpc__n384": {
+    "mean_accuracy": 0.7189542483660131,
+    "std_accuracy": 0.0051021225477110915,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__ia3__mrpc__n48": {
+    "mean_accuracy": 0.6372549019607843,
+    "std_accuracy": 0.06590357676347426,
+    "n_runs": 3,
+    "collapsed_count": 3,
+    "collapse_rate": 1.0
+  },
+  "decoder-only__ia3__mrpc__n96": {
+    "mean_accuracy": 0.670751633986928,
+    "std_accuracy": 0.005102122547711154,
+    "n_runs": 3,
+    "collapsed_count": 3,
+    "collapse_rate": 1.0
+  },
+  "decoder-only__ia3__qnli__n192": {
+    "mean_accuracy": 0.6020501555921656,
+    "std_accuracy": 0.012356865335337863,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__ia3__qnli__n384": {
+    "mean_accuracy": 0.6619683934346208,
+    "std_accuracy": 0.0005884221588256026,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__ia3__qnli__n48": {
+    "mean_accuracy": 0.5363963634144854,
+    "std_accuracy": 0.012449167712782129,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__ia3__qnli__n96": {
+    "mean_accuracy": 0.5701385075355421,
+    "std_accuracy": 0.020571985317066104,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__ia3__rte__n192": {
+    "mean_accuracy": 0.5619735258724429,
+    "std_accuracy": 0.03634095997723587,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "decoder-only__ia3__rte__n384": {
+    "mean_accuracy": 0.5860409145607702,
+    "std_accuracy": 0.045138385880893,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__ia3__rte__n48": {
+    "mean_accuracy": 0.5114320096269555,
+    "std_accuracy": 0.04711617797942694,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "decoder-only__ia3__rte__n96": {
+    "mean_accuracy": 0.53309265944645,
+    "std_accuracy": 0.047116177979426944,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "decoder-only__ia3__sst2__n192": {
+    "mean_accuracy": 0.6601681957186544,
+    "std_accuracy": 0.0810442630446759,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__ia3__sst2__n384": {
+    "mean_accuracy": 0.7710244648318043,
+    "std_accuracy": 0.03913111118726441,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__ia3__sst2__n48": {
+    "mean_accuracy": 0.5217889908256881,
+    "std_accuracy": 0.014369224869428527,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "decoder-only__ia3__sst2__n96": {
+    "mean_accuracy": 0.5898318042813456,
+    "std_accuracy": 0.045444302266384504,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__mrpc__n192": {
+    "mean_accuracy": 0.7352941176470589,
+    "std_accuracy": 0.011231803173911393,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__mrpc__n384": {
+    "mean_accuracy": 0.7393790849673203,
+    "std_accuracy": 0.014150741891902607,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__mrpc__n48": {
+    "mean_accuracy": 0.6486928104575163,
+    "std_accuracy": 0.01981103864866362,
+    "n_runs": 3,
+    "collapsed_count": 3,
+    "collapse_rate": 1.0
+  },
+  "decoder-only__lora__mrpc__n96": {
+    "mean_accuracy": 0.7050653594771242,
+    "std_accuracy": 0.012090399172343764,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__qnli__n192": {
+    "mean_accuracy": 0.8034047226798462,
+    "std_accuracy": 0.020652181955334952,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__qnli__n384": {
+    "mean_accuracy": 0.8264079565562268,
+    "std_accuracy": 0.012474710928552183,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__qnli__n48": {
+    "mean_accuracy": 0.6299957288425163,
+    "std_accuracy": 0.030230537669289875,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__qnli__n96": {
+    "mean_accuracy": 0.7201781682836049,
+    "std_accuracy": 0.06242134725374061,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__rte__n192": {
+    "mean_accuracy": 0.6209386281588448,
+    "std_accuracy": 0.0157360972690999,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__rte__n384": {
+    "mean_accuracy": 0.6979542719614922,
+    "std_accuracy": 0.021760699542749822,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__rte__n48": {
+    "mean_accuracy": 0.542719614921781,
+    "std_accuracy": 0.019882926163487736,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "decoder-only__lora__rte__n96": {
+    "mean_accuracy": 0.605294825511432,
+    "std_accuracy": 0.02611616656343047,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__sst2__n192": {
+    "mean_accuracy": 0.8402140672782874,
+    "std_accuracy": 0.04400343576937581,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__sst2__n384": {
+    "mean_accuracy": 0.8723241590214067,
+    "std_accuracy": 0.020684631893683046,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__sst2__n48": {
+    "mean_accuracy": 0.6001529051987767,
+    "std_accuracy": 0.04748223464584941,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "decoder-only__lora__sst2__n96": {
+    "mean_accuracy": 0.7312691131498471,
+    "std_accuracy": 0.07749386476978427,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__bitfit__mrpc__n192": {
+    "mean_accuracy": 0.6838235294117648,
+    "std_accuracy": 1.3597399555105182e-16,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__bitfit__mrpc__n384": {
+    "mean_accuracy": 0.6838235294117648,
+    "std_accuracy": 1.3597399555105182e-16,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__bitfit__mrpc__n48": {
+    "mean_accuracy": 0.6830065359477123,
+    "std_accuracy": 0.0014150741891902543,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-decoder__bitfit__mrpc__n96": {
+    "mean_accuracy": 0.6838235294117648,
+    "std_accuracy": 1.3597399555105182e-16,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__bitfit__qnli__n192": {
+    "mean_accuracy": 0.5315150405759961,
+    "std_accuracy": 0.018232818973717146,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__bitfit__qnli__n384": {
+    "mean_accuracy": 0.563243639026176,
+    "std_accuracy": 0.04454654243655981,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__bitfit__qnli__n48": {
+    "mean_accuracy": 0.5104643358350113,
+    "std_accuracy": 0.00523321292144526,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__bitfit__qnli__n96": {
+    "mean_accuracy": 0.5111355177253035,
+    "std_accuracy": 0.00803196420618922,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__bitfit__rte__n192": {
+    "mean_accuracy": 0.5078219013237064,
+    "std_accuracy": 0.03112519171210005,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-decoder__bitfit__rte__n384": {
+    "mean_accuracy": 0.536702767749699,
+    "std_accuracy": 0.02611616656343044,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-decoder__bitfit__rte__n48": {
+    "mean_accuracy": 0.4993983152827918,
+    "std_accuracy": 0.0402544613325577,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-decoder__bitfit__rte__n96": {
+    "mean_accuracy": 0.50661853188929,
+    "std_accuracy": 0.047116177979426944,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-decoder__bitfit__sst2__n192": {
+    "mean_accuracy": 0.5840978593272171,
+    "std_accuracy": 0.08619500821140029,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__bitfit__sst2__n384": {
+    "mean_accuracy": 0.6051223241590215,
+    "std_accuracy": 0.1433730865977059,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__bitfit__sst2__n48": {
+    "mean_accuracy": 0.5642201834862385,
+    "std_accuracy": 0.015890374381365816,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__bitfit__sst2__n96": {
+    "mean_accuracy": 0.5940366972477065,
+    "std_accuracy": 0.06528644645637745,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__ia3__mrpc__n192": {
+    "mean_accuracy": 0.6838235294117648,
+    "std_accuracy": 1.3597399555105182e-16,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__ia3__mrpc__n384": {
+    "mean_accuracy": 0.6838235294117648,
+    "std_accuracy": 1.3597399555105182e-16,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__ia3__mrpc__n48": {
+    "mean_accuracy": 0.6830065359477123,
+    "std_accuracy": 0.0014150741891902543,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-decoder__ia3__mrpc__n96": {
+    "mean_accuracy": 0.6838235294117648,
+    "std_accuracy": 1.3597399555105182e-16,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__ia3__qnli__n192": {
+    "mean_accuracy": 0.5363963634144854,
+    "std_accuracy": 0.03578810965199345,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__ia3__qnli__n384": {
+    "mean_accuracy": 0.5771554091158704,
+    "std_accuracy": 0.0599632066823724,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__ia3__qnli__n48": {
+    "mean_accuracy": 0.512477881505888,
+    "std_accuracy": 0.017573080010143346,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-decoder__ia3__qnli__n96": {
+    "mean_accuracy": 0.5059491122094087,
+    "std_accuracy": 0.0014529112087120033,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-decoder__ia3__rte__n192": {
+    "mean_accuracy": 0.5258724428399518,
+    "std_accuracy": 0.03070361208705916,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-decoder__ia3__rte__n384": {
+    "mean_accuracy": 0.5607701564380264,
+    "std_accuracy": 0.03860172065546435,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__ia3__rte__n48": {
+    "mean_accuracy": 0.49458483754512633,
+    "std_accuracy": 0.02010023235678706,
+    "n_runs": 3,
+    "collapsed_count": 3,
+    "collapse_rate": 1.0
+  },
+  "encoder-decoder__ia3__rte__n96": {
+    "mean_accuracy": 0.5270758122743683,
+    "std_accuracy": 0.048836639922269644,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-decoder__ia3__sst2__n192": {
+    "mean_accuracy": 0.6032110091743119,
+    "std_accuracy": 0.12682781140711072,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__ia3__sst2__n384": {
+    "mean_accuracy": 0.6058868501529052,
+    "std_accuracy": 0.14697850676945443,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__ia3__sst2__n48": {
+    "mean_accuracy": 0.5481651376146789,
+    "std_accuracy": 0.03843026623879826,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__ia3__sst2__n96": {
+    "mean_accuracy": 0.5909785932721713,
+    "std_accuracy": 0.08502752755527214,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__lora__mrpc__n192": {
+    "mean_accuracy": 0.6838235294117648,
+    "std_accuracy": 1.3597399555105182e-16,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__lora__mrpc__n384": {
+    "mean_accuracy": 0.6838235294117648,
+    "std_accuracy": 1.3597399555105182e-16,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__lora__mrpc__n48": {
+    "mean_accuracy": 0.6830065359477123,
+    "std_accuracy": 0.0014150741891902543,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-decoder__lora__mrpc__n96": {
+    "mean_accuracy": 0.6838235294117648,
+    "std_accuracy": 1.3597399555105182e-16,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__lora__qnli__n192": {
+    "mean_accuracy": 0.5280370980535725,
+    "std_accuracy": 0.0213229876340321,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__lora__qnli__n384": {
+    "mean_accuracy": 0.6541582768930381,
+    "std_accuracy": 0.0450901876293096,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__lora__qnli__n48": {
+    "mean_accuracy": 0.5053999633900788,
+    "std_accuracy": 0.0038440417353102774,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-decoder__lora__qnli__n96": {
+    "mean_accuracy": 0.5132100799316616,
+    "std_accuracy": 0.007605558788419836,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__lora__rte__n192": {
+    "mean_accuracy": 0.5042117930204573,
+    "std_accuracy": 0.032557759948179735,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-decoder__lora__rte__n384": {
+    "mean_accuracy": 0.5354993983152828,
+    "std_accuracy": 0.010421485003422867,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-decoder__lora__rte__n48": {
+    "mean_accuracy": 0.48255114320096265,
+    "std_accuracy": 0.03235699075751802,
+    "n_runs": 3,
+    "collapsed_count": 3,
+    "collapse_rate": 1.0
+  },
+  "encoder-decoder__lora__rte__n96": {
+    "mean_accuracy": 0.49338146811071,
+    "std_accuracy": 0.04542619997154486,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-decoder__lora__sst2__n192": {
+    "mean_accuracy": 0.5932721712538226,
+    "std_accuracy": 0.08309539439560559,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__lora__sst2__n384": {
+    "mean_accuracy": 0.6662844036697247,
+    "std_accuracy": 0.147628761850955,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-decoder__lora__sst2__n48": {
+    "mean_accuracy": 0.5428134556574924,
+    "std_accuracy": 0.05605597180374117,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-decoder__lora__sst2__n96": {
+    "mean_accuracy": 0.5806574923547401,
+    "std_accuracy": 0.044714967952628304,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__bitfit__mrpc__n192": {
+    "mean_accuracy": 0.6789215686274511,
+    "std_accuracy": 0.006484684585942601,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-only__bitfit__mrpc__n384": {
+    "mean_accuracy": 0.6797385620915032,
+    "std_accuracy": 0.005660296756761017,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-only__bitfit__mrpc__n48": {
+    "mean_accuracy": 0.6846405228758169,
+    "std_accuracy": 0.0014150741891902543,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__bitfit__mrpc__n96": {
+    "mean_accuracy": 0.6838235294117648,
+    "std_accuracy": 1.3597399555105182e-16,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__bitfit__qnli__n192": {
+    "mean_accuracy": 0.5464640917688693,
+    "std_accuracy": 0.026540509666138048,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__bitfit__qnli__n384": {
+    "mean_accuracy": 0.5655622673744585,
+    "std_accuracy": 0.017390997123318645,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__bitfit__qnli__n48": {
+    "mean_accuracy": 0.5138202452864726,
+    "std_accuracy": 0.012526532755574317,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__bitfit__qnli__n96": {
+    "mean_accuracy": 0.5338336689242785,
+    "std_accuracy": 0.02610003256151947,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__bitfit__rte__n192": {
+    "mean_accuracy": 0.54632972322503,
+    "std_accuracy": 0.007515039709264018,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__bitfit__rte__n384": {
+    "mean_accuracy": 0.5487364620938627,
+    "std_accuracy": 0.018050541516245466,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__bitfit__rte__n48": {
+    "mean_accuracy": 0.5114320096269555,
+    "std_accuracy": 0.03687497820949353,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-only__bitfit__rte__n96": {
+    "mean_accuracy": 0.5198555956678701,
+    "std_accuracy": 0.034438238318301305,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-only__bitfit__sst2__n192": {
+    "mean_accuracy": 0.5248470948012233,
+    "std_accuracy": 0.01631237637106411,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__bitfit__sst2__n384": {
+    "mean_accuracy": 0.5676605504587156,
+    "std_accuracy": 0.07673209613908301,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__bitfit__sst2__n48": {
+    "mean_accuracy": 0.5160550458715596,
+    "std_accuracy": 0.026276236783003663,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-only__bitfit__sst2__n96": {
+    "mean_accuracy": 0.5428134556574924,
+    "std_accuracy": 0.02977973502073749,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__ia3__mrpc__n192": {
+    "mean_accuracy": 0.6805555555555557,
+    "std_accuracy": 0.0051021225477110915,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-only__ia3__mrpc__n384": {
+    "mean_accuracy": 0.6821895424836603,
+    "std_accuracy": 0.0028301483783805086,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-only__ia3__mrpc__n48": {
+    "mean_accuracy": 0.6846405228758169,
+    "std_accuracy": 0.0014150741891902543,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__ia3__mrpc__n96": {
+    "mean_accuracy": 0.6846405228758169,
+    "std_accuracy": 0.0014150741891902543,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__ia3__qnli__n192": {
+    "mean_accuracy": 0.5432912319238513,
+    "std_accuracy": 0.025475481377568686,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__ia3__qnli__n384": {
+    "mean_accuracy": 0.5548233571297821,
+    "std_accuracy": 0.019576040734500772,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__ia3__qnli__n48": {
+    "mean_accuracy": 0.5146134602477271,
+    "std_accuracy": 0.012159142732845747,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__ia3__qnli__n96": {
+    "mean_accuracy": 0.527732015376167,
+    "std_accuracy": 0.023031539786392895,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__ia3__rte__n192": {
+    "mean_accuracy": 0.5499398315282792,
+    "std_accuracy": 0.013667649448376075,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__ia3__rte__n384": {
+    "mean_accuracy": 0.5415162454873647,
+    "std_accuracy": 0.006252891002053733,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__ia3__rte__n48": {
+    "mean_accuracy": 0.5078219013237063,
+    "std_accuracy": 0.034121412463917755,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-only__ia3__rte__n96": {
+    "mean_accuracy": 0.5030084235860409,
+    "std_accuracy": 0.017060706231958885,
+    "n_runs": 3,
+    "collapsed_count": 3,
+    "collapse_rate": 1.0
+  },
+  "encoder-only__ia3__sst2__n192": {
+    "mean_accuracy": 0.518348623853211,
+    "std_accuracy": 0.008027522935779796,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__ia3__sst2__n384": {
+    "mean_accuracy": 0.5309633027522936,
+    "std_accuracy": 0.030835618485662276,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__ia3__sst2__n48": {
+    "mean_accuracy": 0.5045871559633027,
+    "std_accuracy": 0.017354066456905456,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-only__ia3__sst2__n96": {
+    "mean_accuracy": 0.533256880733945,
+    "std_accuracy": 0.021879339482040044,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__mrpc__n192": {
+    "mean_accuracy": 0.676470588235294,
+    "std_accuracy": 0.03369540952173417,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-only__lora__mrpc__n384": {
+    "mean_accuracy": 0.7173202614379085,
+    "std_accuracy": 0.013498947419818828,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__mrpc__n48": {
+    "mean_accuracy": 0.6846405228758169,
+    "std_accuracy": 0.0014150741891902543,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__mrpc__n96": {
+    "mean_accuracy": 0.6838235294117648,
+    "std_accuracy": 1.3597399555105182e-16,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__qnli__n192": {
+    "mean_accuracy": 0.5867960217218866,
+    "std_accuracy": 0.030458009735421173,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__qnli__n384": {
+    "mean_accuracy": 0.6935749588138386,
+    "std_accuracy": 0.010793719925173383,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__qnli__n48": {
+    "mean_accuracy": 0.515650741350906,
+    "std_accuracy": 0.014919385154149053,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__qnli__n96": {
+    "mean_accuracy": 0.5408505705046068,
+    "std_accuracy": 0.03261640602058522,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__rte__n192": {
+    "mean_accuracy": 0.5800240673886883,
+    "std_accuracy": 0.039765852326975416,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__rte__n384": {
+    "mean_accuracy": 0.5932611311672683,
+    "std_accuracy": 0.01852563696551219,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__rte__n48": {
+    "mean_accuracy": 0.50661853188929,
+    "std_accuracy": 0.038262606728242235,
+    "n_runs": 3,
+    "collapsed_count": 2,
+    "collapse_rate": 0.6666666666666666
+  },
+  "encoder-only__lora__rte__n96": {
+    "mean_accuracy": 0.5391095066185319,
+    "std_accuracy": 0.03893788131736085,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-only__lora__sst2__n192": {
+    "mean_accuracy": 0.6219418960244648,
+    "std_accuracy": 0.054085823943042524,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__sst2__n384": {
+    "mean_accuracy": 0.8302752293577983,
+    "std_accuracy": 0.02584731116877211,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  },
+  "encoder-only__lora__sst2__n48": {
+    "mean_accuracy": 0.5164373088685016,
+    "std_accuracy": 0.023899845615199693,
+    "n_runs": 3,
+    "collapsed_count": 1,
+    "collapse_rate": 0.3333333333333333
+  },
+  "encoder-only__lora__sst2__n96": {
+    "mean_accuracy": 0.555045871559633,
+    "std_accuracy": 0.04171223275108532,
+    "n_runs": 3,
+    "collapsed_count": 0,
+    "collapse_rate": 0.0
+  }
+}
